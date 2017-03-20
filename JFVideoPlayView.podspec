@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 JFVideoPlayView 是一款方便好用的视频播放器, 它支持全屏和非全屏. 使用方便
                        DESC
 
-  s.homepage         = 'https://github.com/Little-Captain/JFVideoPlayView'
+  s.homepage         = 'http://git.oschina.net/Little-Captain/JFVideoPlayView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Little-Captain' => 'littlecaptain@foxmail.com' }
-  s.source           = { :git => 'https://github.com/Little-Captain/JFVideoPlayView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@git.oschina.net:Little-Captain/JFVideoPlayView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

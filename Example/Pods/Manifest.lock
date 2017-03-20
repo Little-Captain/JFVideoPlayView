@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JFVideoPlayView: 63e95cf274f209f71a25106f8a0f63a87314b141
+  JFVideoPlayView: f1d6847c5c24eef0dcc805f3ae83e6743d6aeae5
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
 PODFILE CHECKSUM: 97e9fa593c50b313bcb0dd6f10f3f6fb2ce33285
