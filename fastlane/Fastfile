@@ -44,4 +44,4 @@ lane :releasePodLib do |arguments|
     pod_push(path: "#{projectName}.podspec", repo: "#{repoName}", allow_warnings: true)
 end
 # 在根目录下, 也就是fastlane文件夹所在目录下
-# 最后执行的命令: fastlane releasePodLib repoName:LCSpecs projectName:JFVideoPlayView tagName:0.1.0
+# 最后执行的命令: fastlane releasePodLib repoName:LCSpecs projectName:JFVideoPlayView tagName:0.1.1
