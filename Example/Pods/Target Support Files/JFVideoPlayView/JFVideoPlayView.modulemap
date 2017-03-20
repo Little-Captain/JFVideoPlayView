@@ -1,0 +1,6 @@
+framework module JFVideoPlayView {
+  umbrella header "JFVideoPlayView-umbrella.h"
+
+  export *
+  module * { export * }
+}

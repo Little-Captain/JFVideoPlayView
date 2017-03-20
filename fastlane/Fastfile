@@ -1,0 +1,47 @@
+# 描述一个航道
+desc '可以快速的去编译, 上传, 一个pod私有库'
+
+# 定义航道
+lane :releasePodLib do |arguments|
+
+    repoName = arguments[:repoName]
+    projectName = arguments[:projectName]
+    # libRemoteURL = arguments[:libRemoteURL]
+    tagName = arguments[:tagName]
+    # 根据制定的自动化流程, 写 action
+    # git remote add origin #{libRemoteURL}
+    # remote_add(remoteURL: libRemoteURL)
+    
+    # pod install
+    cocoapods(
+        podfile: "./Example/Podfile"
+        )
+
+    # git add .
+    git_add(path: ".")
+    # git commit -m '提交描述'
+    git_commit(path: ".", message: "本地库#{tagName}版本更新")
+    # git push origin master
+    push_to_git_remote
+
+    # 判断标签是否已经存在!!!
+    # 如果存在就删除标签, 包含本地标签和远程标签
+    if git_tag_exists(tag: tagName)
+      UI.message("发现存在标签: #{tagName}. 此处删除该标签对应的本地标签和远程标签")
+      remove_tag(tagName: tagName)
+    end
+
+    # git tag -a '#{tagName}'
+    add_git_tag(
+        tag: "#{tagName}"
+        )
+    # git push --tags
+    push_git_tags
+
+    # pod lib lint
+    pod_lib_lint(allow_warnings: true)
+    # pod repo push #{repoName} #{projectName}.podspec
+    pod_push(path: "#{projectName}.podspec", repo: "#{repoName}", allow_warnings: true)
+end
+# 在根目录下, 也就是fastlane文件夹所在目录下
+# 最后执行的命令: fastlane releasePodLib repoName:LCSpecs projectName:JFVideoPlayView tagName:0.1.0

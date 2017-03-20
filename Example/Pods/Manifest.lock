@@ -1,0 +1,19 @@
+PODS:
+  - JFVideoPlayView (0.1.0):
+    - Masonry
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - JFVideoPlayView (from `../`)
+
+EXTERNAL SOURCES:
+  JFVideoPlayView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JFVideoPlayView: 63e95cf274f209f71a25106f8a0f63a87314b141
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 97e9fa593c50b313bcb0dd6f10f3f6fb2ce33285
+
+COCOAPODS: 1.2.0

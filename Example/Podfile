@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'JFVideoPlayView_Example' do
   pod 'JFVideoPlayView', :path => '../'
-
-  target 'JFVideoPlayView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
