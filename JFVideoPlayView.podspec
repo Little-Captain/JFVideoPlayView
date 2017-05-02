@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JFVideoPlayView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'JFVideoPlayView 是一款方便好用的视频播放器'
 
 # This description is used to generate tags and improve search results.
@@ -25,12 +25,13 @@ JFVideoPlayView 是一款方便好用的视频播放器, 它支持全屏和非�
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Little-Captain' => 'littlecaptain@foxmail.com' }
-  s.source           = { :git => 'git@github.com:Little-Captain/JFVideoPlayView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Little-Captain/JFVideoPlayView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'JFVideoPlayView/Classes/**/*'
-  s.resource = 'JFVideoPlayView/Assets/JFVideoPlayView.bundle'
+  s.resource = 'JFVideoPlayView/Assets/*'
+
   s.dependency 'Masonry'
 end
