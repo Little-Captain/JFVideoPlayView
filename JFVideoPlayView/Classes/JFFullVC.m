@@ -22,7 +22,7 @@
 
 #pragma mark - 允许自动旋转
 - (BOOL)shouldAutorotate {
-    // 不返回 YES, 当切换到横屏时, 不会自动旋转屏幕
+    // 不返回 YES, 当进入这个控制器时, 不会自动旋转屏幕
     return YES;
 }
 

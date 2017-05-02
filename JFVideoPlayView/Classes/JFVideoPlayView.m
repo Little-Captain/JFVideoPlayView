@@ -375,7 +375,7 @@
 - (void)videoplayViewSwitchOrientation:(BOOL)isFull {
     
     if (isFull) { // 从非全屏切换到全屏
-        
+        // 全屏控制器是modal出来的!!!
         [self.containerViewController presentViewController:self.fullVc animated:NO completion:^{
             
             [self.fullVc.view addSubview:self];

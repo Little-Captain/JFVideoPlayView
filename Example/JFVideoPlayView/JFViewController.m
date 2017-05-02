@@ -51,4 +51,9 @@
     }];
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 @end

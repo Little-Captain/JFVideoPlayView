@@ -25,7 +25,7 @@
     
     // 让应用一般情况下通过这个导航控制器弹出的控制器都只支持竖屏
     // 如果某个特殊子控制器需要支持特定的屏幕方向, 可以自行设定
-    return UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskLandscape;
 }
 
 @end
