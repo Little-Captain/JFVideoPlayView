@@ -203,9 +203,7 @@
         AVPlayerItemStatus status = [[change objectForKey:NSKeyValueChangeNewKey] integerValue];
         if (AVPlayerItemStatusReadyToPlay == status) {
             [self removeProgressTimer];
-            [self addProgressTimer];
-        } else {
-            [self removeProgressTimer];
+            [self launchPlayer];
         }
     }
 }

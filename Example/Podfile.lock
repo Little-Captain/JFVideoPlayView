@@ -1,5 +1,5 @@
 PODS:
-  - JFVideoPlayView (1.0.1):
+  - JFVideoPlayView (1.0.2):
     - Masonry
   - Masonry (1.0.2)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JFVideoPlayView: 3ab30c69274df4586b9956b50b8fa46a60bb127f
+  JFVideoPlayView: d89f04f940ab66e14c8b7b22eb42d41bf7cdc38a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
 PODFILE CHECKSUM: 97e9fa593c50b313bcb0dd6f10f3f6fb2ce33285

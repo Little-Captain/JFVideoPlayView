@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JFVideoPlayView'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = 'JFVideoPlayView 是一款方便好用的视频播放器'
 
 # This description is used to generate tags and improve search results.
